@@ -20,48 +20,48 @@
   <body>
 
     <div class="d-flex justify-content-center align-items-center mt-5 pt-4 " >
-    <div class="calculator mt-5 mx-5 shadow p-4 bg-white rounded">
+    <div class="calculator mt-5 mx-5 shadow p-4 " >
 
-<input type="text" id="sum" class="form-control">
+<input type="text" id="display" class="form-control " readonly>
 
 
-<div class="row mt-4 ">
+<div class="row mt-4 g-2 mb-2">
 
-    <div class="col "><button class="btn btn-secondary w-100">C</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">/</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">%</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">=</button></div>
+    <div class="col"><button onclick="clearDisplay()" class="btn btn-light  w-100" id="button">C</button></div>
+    <div class="col"><button onclick="addToDisplay('/')" class="btn btn-light w-100" id="button">/</button></div>
+    <div class="col"><button onclick="addToDisplay('%')" class="btn btn-light w-100"id="button">%</button></div>
+    <div class="col"><button onclick="calculate()" class="btn btn-light  w-100"id="button">=</button></div>
     </div>
 
-<div class="row mt-4">
+<div class="row mt-4 g-2 mb-2">
 
-    <div class="col"><button class="btn btn-secondary w-100">7</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">8</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">9</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">X</button></div>
+    <div class="col"><button onclick="addToDisplay('7')" class="btn btn-light w-100"id="button">7</button></div>
+    <div class="col"><button onclick="addToDisplay('8')" class="btn btn-light w-100"id="button">8</button></div>
+    <div class="col"><button onclick="addToDisplay('9')" class="btn btn-light w-100"id="button">9</button></div>
+    <div class="col"><button onclick="addToDisplay('*')" class="btn btn-light w-100"id="button">X</button></div>
     </div>
     
-<div class="row mt-4">
+<div class="row mt-4 g-2 mb-2">
 
-<div class="col"><button class="btn btn-secondary w-100">4</button></div>
-<div class="col"><button class="btn btn-secondary w-100">5</button></div>
-<div class="col"><button class="btn btn-secondary w-100">6</button></div>
-<div class="col"><button class="btn btn-secondary w-100">-</button></div>
+<div class="col"><button onclick="addToDisplay('4')" class="btn btn-light w-100"id="button">4</button></div>
+<div class="col"><button onclick="addToDisplay('5')" class="btn btn-light w-100"id="button">5</button></div>
+<div class="col"><button onclick="addToDisplay('6')" class="btn btn-light w-100" id="button">6</button></div>
+<div class="col"><button onclick="addToDisplay('-')" class="btn btn-light w-100" id="button">-</button></div>
 </div>
 
-<div class="row mt-4">
+<div class="row mt-4 g-2 mb-2">
 
-    <div class="col"><button class="btn btn-secondary w-100">1</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">2</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">3</button></div>
-    <div class="col"><button class="btn btn-secondary w-100">+</button></div>
+    <div class="col"><button onclick="addToDisplay('1')" class="btn btn-light w-100" id="button">1</button></div>
+    <div class="col"><button onclick="addToDisplay('2')" class="btn btn-light w-100" id="button">2</button></div>
+    <div class="col"><button onclick="addToDisplay('3')" class="btn btn-light w-100" id="button">3</button></div>
+    <div class="col"><button onclick="addToDisplay('+')" class="btn btn-light w-100" id="button">+</button></div>
     </div>
-    <div class="row mt-4">
+    <div class="row mt-4 g-2 mb-2">
 
-        <div class="col"><button class="btn btn-secondary w-100">()</button></div>
-        <div class="col"><button class="btn btn-secondary w-100">0</button></div>
-        <div class="col"><button class="btn btn-secondary w-100">.</button></div>
-        <div class="col"><button class="btn btn-secondary w-100">x</button></div>
+        
+        <div class="col"><button onclick="addToDisplay('0')" class="btn btn-light w-100" id="button">0</button></div>
+        <div class="col"><button onclick="addToDisplay('.')" class="btn btn-light w-100" id="button">.</button></div>
+        
         </div>
 
 
